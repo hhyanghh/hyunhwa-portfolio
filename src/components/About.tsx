@@ -3,15 +3,16 @@
 import React from "react";
 import CustomContainer from "./common/CustomContainer";
 import { grey } from "@mui/material/colors";
-import Box from "@mui/material/Box";
 import { CgProfile } from "react-icons/cg";
 import { BiPhone } from "react-icons/bi";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
+import { TbBrandBlogger } from "react-icons/tb";
 import { css } from "@emotion/react";
+import { LinkStyle } from "../styles/commonStyles";
 
 interface InfoAreaProps {
   icon: any;
-  info: string;
+  info: any;
 }
 
 const myInfos = [
@@ -19,6 +20,20 @@ const myInfos = [
   { id: 2, info: "서울시 강동구", icon: <HiOutlineLocationMarker /> },
   { id: 3, info: "devhhyang@gmail.com", icon: <HiOutlineMail /> },
   { id: 4, info: "010-6252-4120", icon: <BiPhone /> },
+  {
+    id: 5,
+    info: (
+      <a
+        href="https://devhyunhwa.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        css={LinkStyle}
+      >
+        https://devhyunhwa.vercel.app/
+      </a>
+    ),
+    icon: <TbBrandBlogger />,
+  },
 ];
 
 const AboutStyle = css`
@@ -30,6 +45,11 @@ const AboutStyle = css`
   gap: 36px;
   /* border: 3px solid grey; */
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const ImgStyle = css`
@@ -48,7 +68,7 @@ const InfoItemStyle = css`
   svg {
     font-size: 24px;
     margin-right: 10px;
-    color: ${grey[600]};
+    color: ${grey[800]};
   }
 
   span {

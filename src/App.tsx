@@ -31,6 +31,9 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "NanumSquareNeo",
+    h5: {
+      fontWeight: 800,
+    },
   },
 });
 

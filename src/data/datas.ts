@@ -15,3 +15,36 @@ export const skills = [
   { id: 5, name: "React", gage: 100 },
   { id: 6, name: "TypeScript", gage: 100 },
 ];
+
+export const skillsData = [
+  {
+    name: "HTML",
+    level: 100,
+    color: "#4682A9",
+  },
+  {
+    name: "CSS",
+    level: 100,
+    color: "#4682A9",
+  },
+  {
+    name: "SCSS",
+    level: 90,
+    color: "#4682A9",
+  },
+  {
+    name: "JavaScript",
+    level: 90,
+    color: "#4682A9",
+  },
+  {
+    name: "React",
+    level: 80,
+    color: "#4682A9",
+  },
+  {
+    name: "TypeScript",
+    level: 70,
+    color: "#4682A9",
+  },
+];
