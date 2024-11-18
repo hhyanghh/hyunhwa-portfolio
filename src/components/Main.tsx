@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import { grey } from "@mui/material/colors";
-import CustomContainer from "./common/CustomContainer";
+
 import { css } from "@emotion/react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const bgImg = `https://images.unsplash.com/photo-1498330177096-689e3fb901ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80`;
 
@@ -38,9 +38,11 @@ const Main = () => {
           프론트엔드 개발자가 되고싶습니다.
         </Typography>
         <Grid container justifyContent={"center"}>
-          <Button variant="contained" color="warning">
-            더 알아보기
-          </Button>
+          <Link to="https://www.naver.com" target="_blank">
+            <Button variant="contained" color="warning">
+              자세히 알아보기
+            </Button>
+          </Link>
         </Grid>
       </div>
     </Box>

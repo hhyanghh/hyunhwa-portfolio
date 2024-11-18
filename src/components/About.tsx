@@ -9,6 +9,8 @@ import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { TbBrandBlogger } from "react-icons/tb";
 import { css } from "@emotion/react";
 import { LinkStyle } from "../styles/commonStyles";
+import { Link } from "react-router-dom";
+// import { Toolbar } from "@mui/material/Toolbar";
 
 interface InfoAreaProps {
   icon: any;
@@ -23,21 +25,21 @@ const myInfos = [
   {
     id: 5,
     info: (
-      <a
-        href="https://devhyunhwa.vercel.app/"
+      <Link
+        to="https://devhyunhwa.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         css={LinkStyle}
       >
         https://devhyunhwa.vercel.app/
-      </a>
+      </Link>
     ),
     icon: <TbBrandBlogger />,
   },
 ];
 
 const AboutStyle = css`
-  width: 640px;
+  max-width: 640px;
   border-radius: 24px;
   padding: 30px;
   margin: 24px auto 0;

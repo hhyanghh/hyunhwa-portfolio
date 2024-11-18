@@ -1,6 +1,13 @@
 // 네비 링크들
+
+interface NavLink {
+  id: number; // Define id as a string
+  name: string;
+  hash: string;
+}
+
 export const navLinks = [
-  { id: 1, name: "Home", hash: "home" },
+  { id: 1, name: "Home", hash: "main" },
   { id: 2, name: "About", hash: "about" },
   { id: 3, name: "Skills", hash: "skills" },
   { id: 4, name: "Works", hash: "Works" },

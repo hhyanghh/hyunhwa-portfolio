@@ -1,10 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React, { useState } from "react";
-import CustomContainer from "./common/CustomContainer";
-import { grey } from "@mui/material/colors";
+import { Link } from "react-scroll";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -36,7 +34,9 @@ const Nav = () => {
         {navLinks.map((item) => (
           <ListItem key={item.id} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <Typography>{item.name}</Typography>
+              <Link to={item.hash} smooth={true} duration={500}>
+                <Typography>{item.name}</Typography>
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -60,9 +60,15 @@ const Nav = () => {
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "flex" } }} css={NavLinksStyle}>
             {navLinks.map((item) => (
-              <Button key={item.id} sx={{ color: "#fff" }}>
-                {item.name}
-              </Button>
+              <Link
+                key={item.id}
+                to={item.hash}
+                smooth={true}
+                duration={500}
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                <Button sx={{ color: "#fff" }}>{item.name}</Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
