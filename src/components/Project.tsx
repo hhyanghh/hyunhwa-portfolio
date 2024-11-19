@@ -40,6 +40,30 @@ const Project: React.FC<ProjectsProps> = ({ onProjectClick }) => {
       link: "https://example.com/project2",
       techStack: ["Next.js", "styled-components", "JavaScript"],
     },
+    {
+      id: "project1",
+      title: "Project 1",
+      description: "A brief description of Project 1.",
+      details: [
+        "Built with React and Emotion",
+        "Focus on performance optimization",
+        "Responsive design for mobile and desktop",
+      ],
+      link: "https://example.com/project1",
+      techStack: ["React", "Emotion", "TypeScript"],
+    },
+    {
+      id: "project2",
+      title: "Project 2",
+      description: "A brief description of Project 2.",
+      details: [
+        "Built with Next.js and styled-components",
+        "Implemented server-side rendering",
+        "Interactive UI components",
+      ],
+      link: "https://example.com/project2",
+      techStack: ["Next.js", "styled-components", "JavaScript"],
+    },
   ];
 
   return (

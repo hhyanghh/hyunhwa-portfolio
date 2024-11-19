@@ -23,6 +23,16 @@ const CustomContainer = ({
   `;
   const ContainerStyle = css`
     padding: 4rem 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+      padding: 3rem 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      padding: 2rem 1rem;
+    }
   `;
   const SectionTitle = css`
     font-family: Black Han Sans, sans-serif;
@@ -30,6 +40,14 @@ const CustomContainer = ({
     font-size: 3rem;
     line-height: 1.5;
     text-align: center;
+
+    @media (max-width: 900px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
   `;
 
   const DividerStyle = css`
