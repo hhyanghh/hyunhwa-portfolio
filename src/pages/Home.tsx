@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Nav from "../components/Nav";
 import Skills from "../components/Skills";
-import Works from "../components/Works";
+import Project from "../components/Project";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -21,9 +21,9 @@ const Home = () => {
         <section id="skills">
           <Skills />
         </section>
-        <section id="Works">
-          <Works
-            onProjectClick={(projectId) => navigate(`/works/${projectId}`)}
+        <section id="Project">
+          <Project
+            onProjectClick={(projectId) => navigate(`/projects/${projectId}`)}
           />
         </section>
         <section id="contact">

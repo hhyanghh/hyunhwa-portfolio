@@ -10,7 +10,7 @@ export const navLinks = [
   { id: 1, name: "Home", hash: "main" },
   { id: 2, name: "About", hash: "about" },
   { id: 3, name: "Skills", hash: "skills" },
-  { id: 4, name: "Works", hash: "Works" },
+  { id: 4, name: "Project", hash: "Project" },
   { id: 5, name: "Contact", hash: "contact" },
 ];
 

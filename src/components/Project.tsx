@@ -2,18 +2,18 @@ import React from "react";
 
 import CustomContainer from "./common/CustomContainer";
 
-type WorksProps = {
+type ProjectsProps = {
   onProjectClick: (projectId: string) => void;
 };
 
-const Works: React.FC<WorksProps> = ({ onProjectClick }) => {
+const Project: React.FC<ProjectsProps> = ({ onProjectClick }) => {
   const projects = [
     { id: "project1", name: "Project 1" },
     { id: "project2", name: "Project 2" },
   ];
 
   return (
-    <CustomContainer title={"Works"}>
+    <CustomContainer title={"Projects"}>
       <ul>
         {projects.map((project) => (
           <li key={project.id} onClick={() => onProjectClick(project.id)}>
@@ -25,4 +25,4 @@ const Works: React.FC<WorksProps> = ({ onProjectClick }) => {
   );
 };
 
-export default Works;
+export default Project;

@@ -46,7 +46,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
 
           {/* 프로젝트 상세 페이지 */}
-          <Route path="/works/:projectId" element={<ProjectDetail />} />
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
 
           {/* 404 페이지 */}
           <Route path="*" element={<NotFound />} />
