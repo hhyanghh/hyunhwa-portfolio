@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
+import AnimatedButton from "./AnimatedButton";
 
 const MainStyle = css`
   height: 90vh;
@@ -60,9 +61,9 @@ const Main = () => {
         </Typography>
         <Grid container justifyContent={"center"}>
           <Link to="https://www.naver.com" target="_blank">
-            <Button variant="outlined" color="info">
+            <AnimatedButton onClick={() => alert("Clicked!")}>
               자세히 알아보기
-            </Button>
+            </AnimatedButton>
           </Link>
         </Grid>
       </div>
