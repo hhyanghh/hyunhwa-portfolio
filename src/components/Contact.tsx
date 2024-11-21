@@ -4,7 +4,7 @@ import { grey } from "@mui/material/colors";
 
 const Contact = () => {
   return (
-    <CustomContainer bgColor={grey[800]}>
+    <CustomContainer>
       <div>Contact</div>
     </CustomContainer>
   );

@@ -21,6 +21,10 @@ const NavLinksStyle = css`
   align-items: flex-end;
 `;
 
+const appBarStyle = css`
+  background-color: rgba(0, 51, 102, 0.8);
+`;
+
 const Nav = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -47,7 +51,7 @@ const Nav = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" color="primary">
+      <AppBar component="nav" css={{ appBarStyle }}>
         <Toolbar sx={{ justifyContent: "flex-end" }}>
           <IconButton
             color="inherit"

@@ -10,7 +10,6 @@ import { TbBrandBlogger } from "react-icons/tb";
 import { css } from "@emotion/react";
 import { LinkStyle } from "../styles/commonStyles";
 import { Link } from "react-router-dom";
-// import { Toolbar } from "@mui/material/Toolbar";
 
 interface InfoAreaProps {
   icon: any;
@@ -105,8 +104,3 @@ const About = () => {
 };
 
 export default About;
-
-// 사람 CgProfile
-// 집 BiHomeAlt
-// mail HiOutlineMail
-// phone BiPhone

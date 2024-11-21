@@ -67,7 +67,7 @@ const Project: React.FC<ProjectsProps> = ({ onProjectClick }) => {
   ];
 
   return (
-    <CustomContainer title={"Projects"}>
+    <CustomContainer title={"Projects"} bgColor="#003366" titleColor="#ffffff">
       <div css={gridContainerStyle}>
         {projects.map((project) => (
           <ProjectCard

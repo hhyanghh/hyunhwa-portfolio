@@ -8,15 +8,36 @@ import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const bgImg = `https://images.unsplash.com/photo-1498330177096-689e3fb901ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80`;
-
 const MainStyle = css`
-  margin-top: 64px;
-  background-image: url(${bgImg});
+  height: 90vh;
+  background-image: url("/images/bg-image.png");
   background-color: #7fc7d9;
   background-position: center;
+  background-size: cover;
+  position: relative;
   padding: 120px 0 80px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  * {
+    position: relative;
+    z-index: 2;
+  }
 `;
 
 const MainTitleStyle = css`
@@ -39,7 +60,7 @@ const Main = () => {
         </Typography>
         <Grid container justifyContent={"center"}>
           <Link to="https://www.naver.com" target="_blank">
-            <Button variant="contained" color="warning">
+            <Button variant="outlined" color="info">
               자세히 알아보기
             </Button>
           </Link>
@@ -50,11 +71,3 @@ const Main = () => {
 };
 
 export default Main;
-
-// 오랫동안 여행과 밀접한 삶을 살다가, 현재는 웹을 여행중인 주니어 개발자 양현화입니다.
-// "여행출발일" 전에 모든것을 준비하는 시간관리에 능숙합니다.
-// 항상 배우는 자세로, 한결같이 열심히 일하겠습니다.
-
-// 적재적소에 알맞은 기술을 적용하여 최고의 UX를 제공할 수 있는
-// 항상 고민하는
-// 프론트엔드 개발자가 되고싶습니다.

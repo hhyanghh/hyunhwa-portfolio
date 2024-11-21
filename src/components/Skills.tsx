@@ -11,6 +11,7 @@ import { SiTypescript } from "react-icons/si";
 import { grey } from "@mui/material/colors";
 
 import Typography from "@mui/material/Typography";
+import { color } from "@mui/system";
 
 interface DetailSkillsProps {
   name: string;
@@ -84,7 +85,7 @@ const DetailSkills: React.FC<DetailSkillsProps> = ({ icon, name, desc }) => {
 
 const Skills = () => {
   return (
-    <CustomContainer bgColor={"#91c8e4"} title="SKILLS">
+    <CustomContainer title="SKILLS" bgColor="#F5917C">
       <div css={SkillBoxStyle}>
         <SkillBars skills={skillsData} flat />
         <div css={SkillGridStyle}>

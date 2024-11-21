@@ -12,13 +12,16 @@ import "./App.css";
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#4682A9",
+      main: "#003366",
     },
     secondary: {
-      main: orange[300],
+      main: "#FFC857",
     },
     warning: {
-      main: "#C92C6D",
+      main: "#FF6F61",
+    },
+    info: {
+      main: "#ffffff",
     },
     text: {
       primary: "#332C39",
