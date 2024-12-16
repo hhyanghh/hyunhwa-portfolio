@@ -45,7 +45,7 @@ const buttonStyle = css`
   }
 
   &:hover .wave:nth-of-type(2) {
-    animation-delay: 0.2s; /* 두 번째 파도의 약간의 딜레이 */
+    animation-delay: 0.2s;
   }
 `;
 

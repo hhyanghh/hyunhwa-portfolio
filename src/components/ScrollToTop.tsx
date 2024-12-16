@@ -41,7 +41,6 @@ const buttonStyle = css`
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // 스크롤 위치를 감지하여 버튼 표시 여부 결정
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -55,7 +54,6 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 맨 위로 스크롤 이동
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

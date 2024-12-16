@@ -17,12 +17,12 @@ type ProjectCardProps = {
 const cardStyle = css`
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* 상단과 하단 간격 자동 정렬 */
+  justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   background-color: #ffffff;
   padding: 24px;
-  min-height: 400px; /* 카드 최소 높이 설정 */
+  min-height: 400px;
 `;
 
 const titleStyle = css`
@@ -71,21 +71,21 @@ const linksContainerStyle = css`
 const linkButtonStyle = css`
   display: flex;
   align-items: center;
-  gap: 6px; /* 아이콘과 텍스트 간격 */
-  font-size: 0.9rem; /* 텍스트 크기 줄임 */
+  gap: 6px;
+  font-size: 0.9rem;
   font-weight: 500;
   color: #003366;
   text-decoration: none;
-  border: 1.5px solid #003366; /* 테두리 두께도 줄임 */
-  background-color: transparent; /* 투명 배경 */
+  border: 1.5px solid #003366;
+  background-color: transparent;
   border-radius: 4px;
-  padding: 6px 10px; /* 내부 여백 축소 */
+  padding: 6px 10px;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #ffc857; /* 호버 시 배경색 */
-    color: #003366; /* 텍스트 색상 */
-    border-color: #ffc857; /* 테두리 색상 */
+    background-color: #ffc857;
+    color: #003366;
+    border-color: #ffc857;
     text-decoration: none;
   }
 `;
@@ -101,10 +101,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div css={cardStyle} id={id}>
-      {/* 제목 */}
       <h3 css={titleStyle}>{title}</h3>
 
-      {/* 기술 스택 */}
       <div css={techStackStyle}>
         {techStack.map((tech, index) => (
           <span key={index} css={badgeStyle}>
@@ -113,19 +111,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         ))}
       </div>
 
-      {/* 설명 */}
       <p css={descriptionStyle}>{description}</p>
 
-      {/* 세부사항 */}
       <ul css={detailsStyle}>
         {details.map((detail, index) => (
           <li key={index}>{detail}</li>
         ))}
       </ul>
 
-      {/* 링크 영역 */}
       <div css={linksContainerStyle}>
-        {/* 프로젝트 링크 */}
         <a
           css={linkButtonStyle}
           href={projectLink}
@@ -136,7 +130,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           프로젝트 방문
         </a>
 
-        {/* 자세히 보기 링크 */}
         <a
           css={linkButtonStyle}
           href={notionLink}
