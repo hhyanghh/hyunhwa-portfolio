@@ -15,10 +15,14 @@ type ProjectCardProps = {
 };
 
 const cardStyle = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 상단과 하단 간격 자동 정렬 */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   background-color: #ffffff;
   padding: 24px;
+  min-height: 400px; /* 카드 최소 높이 설정 */
 `;
 
 const titleStyle = css`
@@ -58,17 +62,10 @@ const badgeStyle = css`
   border-radius: 4px;
 `;
 
-const dividerStyle = css`
-  border: 0;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.1);
-  margin: 16px 0;
-`;
-
 const linksContainerStyle = css`
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: auto;
 `;
 
 const linkButtonStyle = css`
@@ -126,9 +123,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         ))}
       </ul>
 
-      {/* 구분선 */}
-      <hr css={dividerStyle} />
-
       {/* 링크 영역 */}
       <div css={linksContainerStyle}>
         {/* 프로젝트 링크 */}
@@ -139,7 +133,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           rel="noopener noreferrer"
         >
           <TbLink size={20} />
-          Visit Project
+          프로젝트 방문
         </a>
 
         {/* 자세히 보기 링크 */}
@@ -150,7 +144,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           rel="noopener noreferrer"
         >
           <TbFileText size={20} />
-          Read More
+          자세히 알아보기
         </a>
       </div>
     </div>

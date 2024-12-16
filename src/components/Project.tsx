@@ -38,38 +38,15 @@ const Project: React.FC<ProjectsProps> = ({ onProjectClick }) => {
     {
       id: "project2",
       title: "포트폴리오 웹사이트",
-      description: "A brief description of Project 2.",
+      description:
+        "React와 Emotion CSS를 활용해 구축한 포트폴리오 웹사이트입니다. 직관적인 인터페이스와 현대적인 디자인으로 개발자로서의 역량과 프로젝트를 체계적으로 소개합니다. GitHub Pages를 통해 배포하였으며, 사용자 친화적인 UX를 제공합니다.",
       details: [
-        "Built with Next.js and styled-components",
-        "Implemented server-side rendering",
-        "Interactive UI components",
+        "디자인, 기획, 개발 전 과정을 직접 수행한 프로젝트입니다.",
+        "여러 프로젝트와 작업물을 체계적으로 정리하여 소개합니다.",
+        "404 페이지, 프로젝트 상세 페이지 등 주요 페이지를 포함합니다.",
       ],
       projectLink: "https://example.com/project2",
       techStack: ["React", "React Router", "Emotion", "TypeScript"],
-    },
-    {
-      id: "project1",
-      title: "Project 1",
-      description: "A brief description of Project 1.",
-      details: [
-        "Built with React and Emotion",
-        "Focus on performance optimization",
-        "Responsive design for mobile and desktop",
-      ],
-      projectLink: "https://example.com/project1",
-      techStack: ["React", "Emotion", "TypeScript"],
-    },
-    {
-      id: "project2",
-      title: "Project 2",
-      description: "A brief description of Project 2.",
-      details: [
-        "Built with Next.js and styled-components",
-        "Implemented server-side rendering",
-        "Interactive UI components",
-      ],
-      projectLink: "https://example.com/project2",
-      techStack: ["Next.js", "styled-components", "JavaScript"],
     },
   ];
 
