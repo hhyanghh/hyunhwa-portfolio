@@ -8,6 +8,7 @@ import CustomContainer from "./components/common/CustomContainer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { red, orange } from "@mui/material/colors";
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 export const theme = createTheme({
   palette: {
@@ -44,6 +45,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        <ScrollToTop />
         <Routes>
           {/* Home 페이지 */}
           <Route path="/" element={<Home />} />
